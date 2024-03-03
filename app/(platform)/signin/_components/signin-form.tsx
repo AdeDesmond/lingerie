@@ -34,7 +34,7 @@ export const SignInForm = ({showForm, setShowForm}:SigninFormProps) => {
 
             <Button className="mt-2 mb-8 " size="sm">Login</Button>
             <div>
-                <p className="text-muted-foreground text-xs">Don't have an account <Link href={"/signup"} className="font-semibold underline">
+                <p className="text-muted-foreground text-xs">Don&apos;t have an account <Link href={"/signup"} className="font-semibold underline">
                     sign-up
                 </Link></p>
             </div>
