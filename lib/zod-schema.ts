@@ -24,3 +24,10 @@ export const CreateSignUpUserSchema = z.object({
        message:"Passwords don't match",
     path:["passwordConfirm"]
 })
+
+
+export const CreateSignInUserSchema = z.object({
+    email:z.string().email({message:"email should be in a valid format"}),
+    password:z.string()
+})
+

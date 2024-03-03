@@ -26,3 +26,17 @@ export const fetchVerificationToken = async (formData:FormData) => {
         console.log(err)
     }
 }
+
+
+export const fetchLoginUser = async (formData:FormData) => {
+    try{
+        const response = await fetch("/api/users/signin", {
+            method:"POST",
+            body:formData
+        })
+        return await response.json();
+    }
+    catch (err:unknown){
+        console.log(err)
+    }
+}
